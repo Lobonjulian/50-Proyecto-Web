@@ -1,10 +1,22 @@
+import Caracteristicas from "./components/Caracteristicas"
+import Cta from "./components/Cta"
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+import Hero from "./components/Hero"
+import Testimonio from "./components/Testimonio"
+
 function App() {
 
   return (
     
-    <h1>Room Beat
-     
-    </h1>
+    <>
+    <Header />
+    <Hero />
+    <Caracteristicas />
+    <Testimonio />
+    <Cta />
+    <Footer />
+    </>
   )
 }
 
