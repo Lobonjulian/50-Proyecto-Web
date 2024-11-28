@@ -15,7 +15,7 @@ const Footer = () => {
           <Redes />
         </section>
         <section className="footer__info__links">
-          <div className="footer__info__links__soluciones">
+          <div className="footer__info__links__listas">
             <h3>Soluciones</h3>
             <ul>
               <li>Marketing</li>
@@ -24,7 +24,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="footer__info__links__soporte">
+          <div className="footer__info__links__listas">
             <h3>Soporte</h3>
             <ul>
               <li>Precios</li>

@@ -1,27 +1,30 @@
+import IconoComponentes from "./IconComponentes";
+
 const REDES = [
   {
-    name: "facebook",
+    name: "Facebook",
     url: "https://www.facebook.com/",
-    icono: "fa-brands fa-facebook",
   },
   {
-    name: "instagram",
+    name: "Instagram",
     url: "https://www.instagram.com/",
-    icono: "fa-brands fa-instagram",
   },
   {
-    name: "twitter",
+    name: "Twitter",
     url: "https://www.twitter.com/",
-    icono: "fa-brands fa-twitter",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/",
   },
 ];
 
 const Redes = () => {
   return (
-    <div>
+    <div className="redSocial">
       {REDES.map((red) => (
         <a href={red.url} key={red.name}>
-          <i className={red.icono}></i>
+         <IconoComponentes name={red.name} />
         </a>
       ))}
     </div>
