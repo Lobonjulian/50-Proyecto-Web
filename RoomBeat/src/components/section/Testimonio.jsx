@@ -1,7 +1,21 @@
-const Testimonio = () => {
-  return (
-    <div>Testimonio</div>
-  )
-}
+import Title from "../Part/Title";
+import Card from "../Ui/Card";
 
-export default Testimonio
+const Testimonio = ({
+  titulo = "Testimonio",
+  subtitulo = "Lo que dicen nuestros clientes",
+  TestimonioData,
+}) => {
+  return (
+    <section>
+      <Title titulo={titulo} texto={subtitulo} />
+      {TestimonioData.map((testimonio, index) => (
+        <div key={index}>
+          <Card {...testimonio} />
+        </div>
+      ))}
+    </section>
+  );
+};
+
+export default Testimonio;

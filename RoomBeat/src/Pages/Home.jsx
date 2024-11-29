@@ -1,6 +1,9 @@
 import Hero from "../components/section/Hero";
 import HeroImagen from "../assets/img/HeroRoomBeat.webp";
 import Caracteristica from "../components/section/Caracteristica";
+import Testimonio from "../components/section/Testimonio";
+import Cta from "../components/section/Cta";
+import { CaracteristicaHome, CtaImagen, TestimonioHome } from "../utils/data";
 
 const Home = () => {
   return (
@@ -14,7 +17,25 @@ const Home = () => {
         btn2Titulo={"Ver demo"}
         imagen={HeroImagen}
       />
-      <Caracteristica description={"Todo lo que necesitas para un hogar inteligente"} />
+      <Caracteristica
+        description={"Todo lo que necesitas para un hogar inteligente"}
+        CaracteristicaData={CaracteristicaHome}
+      />
+      <Testimonio TestimonioData={TestimonioHome} />
+      <section className="cta__section">
+        <Cta
+          titulo={"Descubre el poder de la automatización"}
+          subTitulo={
+            "Roombeat te permite automatizar todas las tareas rutinarias de tu hogar, desde la iluminación hasta la temperatura, para que puedas centrarte en lo que realmente importa."
+          }
+          btnTitulo={"Comenzar ahora"}
+        />
+        {CtaImagen.map((ctaImage, index) => (
+          <div key={index}>
+            <img src={ctaImage.imagen} />
+          </div>
+        ))}
+      </section>
     </main>
   );
 };

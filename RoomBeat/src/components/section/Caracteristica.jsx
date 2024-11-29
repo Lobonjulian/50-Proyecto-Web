@@ -1,13 +1,24 @@
-import Title from "../Part/Title"
-import Card from "../Ui/Card"
+import Title from "../Part/Title";
+import Card from "../Ui/Card";
 
-const Caracteristica = ({ titulo="Caracteristicas", description }) => {
+import "../../styles/section.css";
+
+const Caracteristica = ({
+  titulo = "Caracteristicas",
+  description,
+  CaracteristicaData,
+}) => {
   return (
-    <section>
-    <Title titulo={titulo} texto={description} />
-    <Card />
-    </section>
-  )
-}
+    <section className="caracteristica">
+      <Title titulo={titulo} texto={description} />
 
-export default Caracteristica
+      {CaracteristicaData.map((caracteristica, index) => (
+        <div key={index}>
+          <Card {...caracteristica} />
+        </div>
+      ))}
+    </section>
+  );
+};
+
+export default Caracteristica;

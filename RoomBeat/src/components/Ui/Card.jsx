@@ -1,10 +1,13 @@
-import Title from "../Part/Title";
+import IconoComponentes from "../Part/IconComponentes";
 
-const Card = ({ icon, titulo, description }) => {
+const Card = ({ titulo, description, icon }) => {
   return (
     <div className="card">
-      <Title titulo={titulo} texto={description} />
-      <img src={icon} />
+      <div className="card__title">
+        <span className="card__title__span"><IconoComponentes icon={icon}/> </span>
+        <h4>{titulo}</h4>
+      </div>
+      <p>{description}</p>
     </div>
   );
 };

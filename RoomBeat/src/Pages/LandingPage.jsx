@@ -1,5 +1,9 @@
 import Hero from "../components/section/Hero";
 import HeroImagen from "../assets/img/HeroRoomBeatLanding.webp";
+import Beneficio from "../components/section/Beneficio";
+import Form from "../components/section/Form";
+import Testimonio from "../components/section/Testimonio";
+import FQA from "../components/section/FQA";
 
 const Landing = () => {
   return (
@@ -12,6 +16,10 @@ const Landing = () => {
         btnTitulo={"Comienza Ahora"}
         imagen={HeroImagen}
       />
+      <Beneficio />
+      <Form />
+      <Testimonio />
+      <FQA />
     </main>
   );
 };
