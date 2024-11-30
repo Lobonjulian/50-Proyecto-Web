@@ -1,18 +1,21 @@
 import Altavoz from "../assets/icons/altavoz.svg";
-import BarraAnalitica from "../assets/icons/barraAnalisis.svg";
-import Escudo from "../assets/icons/escudo.svg";
-import CasaControl from "../assets/icons/casa.svg";
-import Microfono from "../assets/icons/microfono.svg";
-import Wifi from "../assets/icons/wifi.svg";
-import Disco from "../assets/icons/disco.svg";
-// import HomeControl from  "../assets/icons/home-control.svg"
 import AnaValencia from "../assets/img/Ana Valencia.webp";
-import CarlosMendoza from "../assets/img/Carlos Mendoza.webp";
-import MariaRodriguez from "../assets/img/Maria Rodriguez.webp";
+import BarraAnalitica from "../assets/icons/barraAnalisis.svg";
+import Bateria from "../assets/icons/bateria.svg";
 import Bombillo from "../assets/img/bombillo.webp";
 import Burbuja from "../assets/img/burbuja.webp";
 import Camara from "../assets/img/camara.webp";
+import CarlosMendoza from "../assets/img/Carlos Mendoza.webp";
+import CasaControl from "../assets/icons/casa.svg";
 import Control from "../assets/img/control.webp";
+import Disco from "../assets/icons/disco.svg";
+import Escudo from "../assets/icons/escudo.svg";
+import Flechas from "../assets/icons/flechas.svg";
+import MariaRodriguez from "../assets/img/Maria Rodriguez.webp";
+import Microfono from "../assets/icons/microfono.svg";
+import Phone from "../assets/icons/phone.svg";
+import Rayo from "../assets/icons/rayo.svg";
+import Wifi from "../assets/icons/wifi.svg";
 
 export const CaracteristicaHome = [
   {
@@ -123,5 +126,89 @@ export const CtaImagen = [
   },
   {
     imagen: Control,
+  },
+];
+
+export const BeneficioCaracteristica = [
+  {
+    name: "Sonido adaptativo",
+    description:
+      "Se ajusta automáticamente según la acústica de tu habitación para una experiencia óptima.",
+    icon: CasaControl,
+  },
+  {
+    name: "Actualizaciones automáticas",
+    description:
+      "Mejoras continuas y nuevas funcionalidades a través de actualizaciones de software. ",
+    icon: Flechas,
+  },
+  {
+    name: "Eficiencia energética",
+    description:
+      "Bajo consumo de energía y modo de espera inteligente para mayor sostenibilidad.",
+    icon: Bateria,
+  },
+  {
+    name: "Privacidad garantizada",
+    description:
+      "Encriptación de datos y controles de privacidad avanzados para tu tranquilidad.",
+    icon: Escudo,
+  },
+];
+
+export const BeneficioLanding = [
+  {
+    name: "Seguridad Avanzada",
+    description:
+      "Protección 24/7 con tecnología de encriptación de última generación y monitoreo en tiempo real.",
+    icon: Escudo,
+  },
+  {
+    name: "Eficiencia Energética",
+    description:
+      "Optimiza el consumo de energía y reduce tus facturas mensuales hasta un 30%. ",
+    icon: Rayo,
+  },
+  {
+    name: "Control Total",
+    description:
+      "Controla todos los dispositivos de tu hogar desde una única aplicación intuitiva. ",
+    icon: Phone,
+  },
+];
+
+export const Acciones = [
+  {
+    titulo: "Integración perfecta",
+    subTitulo: "En cualquier espacio",
+    imagen: "",
+  },
+  {
+    titulo: "Diseño premium",
+    subTitulo: "Acabados de alta calidad",
+    imagen: "",
+  },
+  {
+    titulo: "Control intuitivo",
+    subTitulo: "Control intuitivo",
+    imagen: "",
+  },
+];
+
+export const Pqr = [
+  {
+    pregunta: "¿Qué dispositivos son compatibles con Roombeat? ",
+    respuesta:
+      "Roombeat es compatible con la mayoría de los dispositivos inteligentes populares, incluyendo termostatos, luces, cerraduras y cámaras de seguridad de principales marcas. ",
+  },
+  {
+    pregunta: "¿Necesito conocimientos técnicos para instalar Roombeat? ",
+    respuesta:
+      "No, Roombeat está diseñado para ser fácil de instalar y configurar. Además, ofrecemos soporte técnico gratuito durante la instalación.  ",
+  },
+  {
+    pregunta: "¿Cuál es la política de privacidad de Roombeat? ",
+    respuesta:
+      "Tu privacidad es nuestra prioridad. Todos los datos están encriptados y nunca compartimos información personal con terceros. ",
   },
 ];
