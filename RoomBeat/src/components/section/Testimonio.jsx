@@ -7,13 +7,15 @@ const Testimonio = ({
   TestimonioData,
 }) => {
   return (
-    <section>
+    <section className="testimonio">
       <Title titulo={titulo} texto={subtitulo} />
+      <div className="testimonio__cards">
       {TestimonioData.map((testimonio, index) => (
-        <div key={index}>
-          <Card {...testimonio} />
+        <div className="testimonio__card" key={index}>
+          <Card className="card card--testimonio" {...testimonio} />
         </div>
       ))}
+      </div>
     </section>
   );
 };

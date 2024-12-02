@@ -1,7 +1,9 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import LandingPage from "./Pages/LandingPage";
 import Footer from "./components/Footer";
+import "./styles/layauts/page.css";
 
 const HomePage = lazy(() => import("./Pages/Home"));
 const CharacteristicsPage = lazy(() => import("./Pages/CarateristicasPage"));
@@ -16,6 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/caracteristicas" element={<CharacteristicsPage />} />
           <Route path="/contacto" element={<ContactoPage />} />
+          <Route path="/landing" element={<LandingPage />} />
         </Routes>
       </Suspense>
       <Footer />

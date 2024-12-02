@@ -7,15 +7,20 @@ const Hero = ({ titulo, subTitulo, btnTitulo, btn2Titulo, imagen }) => {
     <section className="hero">
       <div className="hero__title">
         <Title titulo={titulo} texto={subTitulo} />
-       
+
         <div className="hero__title__btn">
           <Button titulo={btnTitulo} />
-          {btn2Titulo && <Button titulo={btn2Titulo} />}
+          {btn2Titulo && (
+            <Button titulo={btn2Titulo} className="btn btn--demo" />
+          )}
         </div>
       </div>
-      <div className="hero__imagen">
-        <img src={imagen} alt="hero Imagen" />
-      </div>
+
+      {imagen && (
+        <div className="hero__imagen">
+          <img src={imagen} alt="hero Imagen" />
+        </div>
+      )}
     </section>
   );
 };

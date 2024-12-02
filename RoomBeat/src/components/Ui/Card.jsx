@@ -1,13 +1,22 @@
 import IconoComponentes from "../Part/IconComponentes";
 
-const Card = ({ titulo, description, icon }) => {
+const Card = ({ name, titulo, description, icon, imagen, profesion, className= "card" }) => {
   return (
-    <div className="card">
+    <div className={className}>
       <div className="card__title">
-        <span className="card__title__span"><IconoComponentes icon={icon}/> </span>
-        <h4>{titulo}</h4>
+        {imagen ? (
+          <img src={imagen} alt={name} />
+        ) : (
+          <span className="card__title__span">
+            <IconoComponentes icon={icon} />
+          </span>
+        )}
+        <div>
+          <h4>{titulo || name}</h4>
+          {profesion && <p> {profesion} </p>}
+        </div>
       </div>
-      <p>{description}</p>
+      <p className="card__description">{description}</p>
     </div>
   );
 };

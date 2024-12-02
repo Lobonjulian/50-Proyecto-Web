@@ -4,7 +4,7 @@ import Caracteristica from "../components/section/Caracteristica";
 import Cta from "../components/section/Cta";
 import Hero from "../components/section/Hero";
 import Card from "../components/Ui/Card";
-import { BeneficioCaracteristica, CaracteristicaPage } from "../utils/data";
+import { Acciones, BeneficioCaracteristica, CaracteristicaPage } from "../utils/data";
 
 const Caracteristicas = () => {
   return (
@@ -18,23 +18,30 @@ const Caracteristicas = () => {
       />
 
       <Caracteristica
+        className="caracteristica caracteristica--page"
         description={"Una experiencia sonora superior"}
         CaracteristicaData={CaracteristicaPage}
       />
-      
-      <Beneficio titulo={"Beneficios Clave"} BeneficioData={BeneficioCaracteristica}  />
-      
+
+      <Beneficio
+        titulo={"Beneficios Clave"}
+        BeneficioData={BeneficioCaracteristica}
+      />
+
       <section>
-        <Title titulo={"Roombeat en acción"} texto={"Descubre cómo Roombeat transforma tu experiencia de audio"} />
-     {
-        CaracteristicaPage.map((caracteristica, index) => (
+        <Title
+          titulo={"Roombeat en acción"}
+          texto={"Descubre cómo Roombeat transforma tu experiencia de audio"}
+        />
+        <div>
+        {Acciones.map((caracteristica, index) => (
           <div key={index}>
             <Card {...caracteristica} />
           </div>
-        ))
-     }
+        ))}
+        </div>
       </section>
-      
+
       <Cta
         titulo={"¿Listo para revolucionar tu experiencia de audio?"}
         subTitulo={"Únete a la revolución del sonido inteligente."}

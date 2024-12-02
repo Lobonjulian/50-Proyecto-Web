@@ -16,6 +16,9 @@ import Microfono from "../assets/icons/microfono.svg";
 import Phone from "../assets/icons/phone.svg";
 import Rayo from "../assets/icons/rayo.svg";
 import Wifi from "../assets/icons/wifi.svg";
+import Bocina from "../assets/img/Bocina.webp"
+import House from "../assets/img/House.webp"
+import PhoneApp from "../assets/img/PhoneApp.webp"
 
 export const CaracteristicaHome = [
   {
@@ -181,17 +184,17 @@ export const Acciones = [
   {
     titulo: "Integración perfecta",
     subTitulo: "En cualquier espacio",
-    imagen: "",
+    imagen: House,
   },
   {
     titulo: "Diseño premium",
     subTitulo: "Acabados de alta calidad",
-    imagen: "",
+    imagen: Bocina,
   },
   {
     titulo: "Control intuitivo",
     subTitulo: "Control intuitivo",
-    imagen: "",
+    imagen: PhoneApp,
   },
 ];
 

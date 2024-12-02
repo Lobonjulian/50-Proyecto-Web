@@ -4,19 +4,21 @@ import Card from "../Ui/Card";
 import "../../styles/section.css";
 
 const Caracteristica = ({
-  titulo = "Caracteristicas",
+  titulo = "Características",
   description,
   CaracteristicaData,
+  className="caracteristica",
 }) => {
   return (
-    <section className="caracteristica">
+    <section className={className}>
       <Title titulo={titulo} texto={description} />
-
-      {CaracteristicaData.map((caracteristica, index) => (
-        <div key={index}>
-          <Card {...caracteristica} />
-        </div>
-      ))}
+      <div className="caracteristica__card">
+        {CaracteristicaData.map((caracteristica, index) => (
+          <div key={index}>
+            <Card {...caracteristica} />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

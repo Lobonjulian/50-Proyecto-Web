@@ -18,10 +18,12 @@ const Home = () => {
         imagen={HeroImagen}
       />
       <Caracteristica
+        className="caractersitica caracteistica--home"
         description={"Todo lo que necesitas para un hogar inteligente"}
         CaracteristicaData={CaracteristicaHome}
       />
       <Testimonio TestimonioData={TestimonioHome} />
+
       <section className="cta__section">
         <Cta
           titulo={"Descubre el poder de la automatización"}
@@ -30,11 +32,13 @@ const Home = () => {
           }
           btnTitulo={"Comenzar ahora"}
         />
-        {CtaImagen.map((ctaImage, index) => (
-          <div key={index}>
-            <img src={ctaImage.imagen} />
-          </div>
-        ))}
+        <div className="cta__section__imagen">
+          {CtaImagen.map((ctaImage, index) => (
+            <div className="cta__section__img" key={index}>
+              <img src={ctaImage.imagen} />
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   );

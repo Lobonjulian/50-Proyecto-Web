@@ -1,19 +1,13 @@
-import Title from "../Part/Title"
-import Card from "../Ui/Card"
+import Title from "../Part/Title";
+import DataMap from "../Part/DataMap";
 
-const Beneficio = ({titulo, texto, BeneficioData }) => {
+const Beneficio = ({ titulo, texto, BeneficioData }) => {
   return (
-    <section>
+    <section className="beneficios">
       <Title titulo={titulo} texto={texto} />
-      {
-        BeneficioData.map((beneficio, index) => (
-          <div key={index}>
-            <Card {...beneficio} />
-          </div>
-        ))
-      }
+      <DataMap className="beneficios__map" Datos={BeneficioData} />
     </section>
-  )
-}
+  );
+};
 
-export default Beneficio
+export default Beneficio;
