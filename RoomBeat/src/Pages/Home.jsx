@@ -1,9 +1,10 @@
+import { CaracteristicaHome, CtaImagen, TestimonioHome } from "../utils/data";
+import Caracteristica from "../components/section/Caracteristica";
+import Cta from "../components/section/Cta";
+import DataMap from "../components/Part/DataMap";
 import Hero from "../components/section/Hero";
 import HeroImagen from "../assets/img/HeroRoomBeat.webp";
-import Caracteristica from "../components/section/Caracteristica";
 import Testimonio from "../components/section/Testimonio";
-import Cta from "../components/section/Cta";
-import { CaracteristicaHome, CtaImagen, TestimonioHome } from "../utils/data";
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
         imagen={HeroImagen}
       />
       <Caracteristica
-        className="caractersitica caracteistica--home"
+        className="caracteristica caracteristica--home"
         description={"Todo lo que necesitas para un hogar inteligente"}
         CaracteristicaData={CaracteristicaHome}
       />
@@ -32,13 +33,7 @@ const Home = () => {
           }
           btnTitulo={"Comenzar ahora"}
         />
-        <div className="cta__section__imagen">
-          {CtaImagen.map((ctaImage, index) => (
-            <div className="cta__section__img" key={index}>
-              <img src={ctaImage.imagen} />
-            </div>
-          ))}
-        </div>
+        <DataMap Datos={CtaImagen} className={"cta__section__img"} />
       </section>
     </main>
   );

@@ -21,22 +21,33 @@
   align-items: center;
   justify-content: center;
   img {
-    height: 34.88rem;
+    max-height: 20rem;
   }
 }
 
-.caracteristica, .beneficios {
+.hero--caracteristica {
+  padding: 2rem 0;
+  justify-content: center;
+  .hero__title__btn {
+    justify-content: center;
+  }
+}
+
+.caracteristica,
+.beneficios {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
 }
 .beneficios {
   flex-direction: row;
 }
 
-.caracteristica__card, .beneficios__map {
+.caracteristica__map,
+.beneficios__map {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
   padding: 2rem 0;
   .card {
     background-color: var(--bg-100);
@@ -45,17 +56,43 @@
   }
 }
 .beneficios__map {
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.testimonio__cards {
+.testimonio__map {
   display: flex;
   gap: 2rem;
+  padding: 0 1rem;
 }
 
 .cta {
   display: flex;
   flex-direction: column;
+  align-items: start;
+  max-width: 600px;
   gap: 2rem;
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+    .hero__title, .hero__title__btn {
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .caracteristica__map, .beneficios__map, .testimonio__map {
+    flex-wrap: wrap ;
+    /* font-size: .5rem; */
+  }
+  .cta {
+    padding: 1rem ;
+    align-items: center;
+  }
 }

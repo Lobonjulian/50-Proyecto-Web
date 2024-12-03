@@ -1,50 +1,40 @@
+import { InfoPersonal } from "../utils/data";
+import DataMap from "../components/Part/DataMap";
 import Form from "../components/section/Form";
-import Redes from "../components/Part/Redes";
+import IconoComponentes from "../components/Part/IconComponentes";
 import Mapa from "../components/Part/Mapa";
-
-const InfoPersonal = [
-  { titulo: "Teléfono de soporte", information: "+57 300 123 4567", icono: "" },
-  {
-    titulo: "Correo electrónico",
-    information: "contacto@roombeat.co",
-    icono: "",
-  },
-  {
-    titulo: "Horario de atención",
-    information: "Lunes a Viernes: 9:00 - 18:00",
-    icono: "",
-  },
-];
+import Redes from "../components/Part/redes";
+import Ubicacion from "../assets/icons/ubicacion.svg";
 
 const Contacto = () => {
   return (
-    <main>
+    <main className="contacto">
       <h1>Contactos </h1>
-      <aside>
-        <Form />
-      </aside>
 
-      <section>
-        <div>
+      <section className="contacto__form">
+        <Form />
+
+      <section className="contacto__form__info">
+        <div className="contacto__form__info__personal">
           <h3>Información Personal</h3>
           <section>
-            {InfoPersonal.map((info) => (
-              <div key={info.titulo}>
-                <h4>{info.titulo}</h4>
-                <p>{info.information}</p>
-              </div>
-            ))}
+            <DataMap Datos={InfoPersonal} className="info" />
           </section>
           <p>síguenos en nuestras redes</p>
           <Redes />
         </div>
-        <div>
+        <div className="contacto__form__info__personal">
           <h3>Nuestra Ubicación</h3>
           <Mapa />
+          <div className="contacto__form">
+            <IconoComponentes icon={Ubicacion} />
+            <p>Roombeat, 123 Calle Principal, Ciudad, País</p>
+          </div>
         </div>
       </section>
+      </section>
     </main>
-  );
+  ); 
 };
 
 export default Contacto;

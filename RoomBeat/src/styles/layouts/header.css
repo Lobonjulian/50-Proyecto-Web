@@ -13,9 +13,9 @@
   flex-wrap: wrap;
 }
 
-.header__nav {
-  ul{
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;}
-}
+@media screen and (max-width: 768px) {
+  .header, .header__NavLogo {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+} 

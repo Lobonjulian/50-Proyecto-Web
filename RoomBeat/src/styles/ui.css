@@ -36,10 +36,10 @@
 }
 
 .card__title {
-  display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 1rem;
 }
+
 .card__title__span {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -52,6 +52,14 @@
   padding: 1rem;
   border-radius: 0.5rem;
   p {
+    padding-top: .5rem;
     font-size: 1.2rem;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .card--testimonio {
+    max-width: 100%;
+  }
+  
 }

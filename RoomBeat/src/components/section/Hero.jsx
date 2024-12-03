@@ -2,9 +2,9 @@ import Title from "../Part/Title";
 import Button from "../Ui/Button";
 import "../../styles/section.css";
 
-const Hero = ({ titulo, subTitulo, btnTitulo, btn2Titulo, imagen }) => {
+const Hero = ({ titulo, subTitulo, btnTitulo, btn2Titulo, imagen, className="hero" }) => {
   return (
-    <section className="hero">
+    <section className={className}>
       <div className="hero__title">
         <Title titulo={titulo} texto={subTitulo} />
 
@@ -18,7 +18,7 @@ const Hero = ({ titulo, subTitulo, btnTitulo, btn2Titulo, imagen }) => {
 
       {imagen && (
         <div className="hero__imagen">
-          <img src={imagen} alt="hero Imagen" />
+          <img src={imagen} alt="hero Imagen" loading="lazy" />
         </div>
       )}
     </section>

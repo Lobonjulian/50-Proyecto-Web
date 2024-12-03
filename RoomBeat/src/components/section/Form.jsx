@@ -1,40 +1,94 @@
-const Form = () => {
-  
-  // const [name, setName] = useState();
-  // const [email, setEmail] = useState();
+import { useState } from "react";
+import "../../styles/form.css";
 
-  const onSubmit = (e) => {
+const Form = ({ isLandingPage = false }) => {
+  const [formData, setFormData] = useState({
+    nombre: "",
+    correo: "",
+    asunto: "soporte",
+    mensaje: ""
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
+    // Aquí agregar la lógica para enviar el formulario
+    console.log("Datos del formulario:", formData);
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <div>
-        <label>Nombre:</label>
-        <input type="text" />
-      </div>
+    <section className="form-section">
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="nombre">Nombre completo</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            value={formData.nombre}
+            onChange={handleChange}
+            placeholder="Escribe tu nombre"
+            required
+          />
+        </div>
 
-      <div>
-        <label>Correo:</label>
-        <input type="email" />
-      </div>
+        <div className="form-group">
+          <label htmlFor="correo">Correo electrónico</label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            value={formData.correo}
+            onChange={handleChange}
+            placeholder="ejemplo@correo.com"
+            required
+          />
+        </div>
 
-      <div>
-      <label>Asunto</label>
-      <select>
-      <option>Soporte técnico</option>
-      <option>Consulta general</option>
-      <option>Sugerencias</option>
-      <option>Otros</option>
-      </select>
-      </div>
+        {!isLandingPage && (
+          <>
+            <div className="form-group">
+              <label htmlFor="asunto">Asunto</label>
+              <select
+                id="asunto"
+                name="asunto"
+                value={formData.asunto}
+                onChange={handleChange}
+                required
+              >
+                <option value="soporte">Soporte técnico</option>
+                <option value="consulta">Consulta general</option>
+                <option value="sugerencia">Sugerencias</option>
+                <option value="otro">Otros</option>
+              </select>
+            </div>
 
-      <div>
-        <label>Mensaje:</label>
-        <textarea></textarea>
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
+            <div className="form-group">
+              <label htmlFor="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                value={formData.mensaje}
+                onChange={handleChange}
+                placeholder="¿En qué podemos ayudarte?"
+                required
+              ></textarea>
+            </div>
+          </>
+        )}
+
+        <button type="submit" className="btn btn__button">
+          {isLandingPage ? "Comenzar ahora" : "Enviar mensaje"}
+        </button>
+      </form>
+    </section>
   );
 };
 

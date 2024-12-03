@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import LandingPage from "./Pages/LandingPage";
 import Footer from "./components/Footer";
-import "./styles/layauts/page.css";
+import "./styles/layouts/page.css";
 
 const HomePage = lazy(() => import("./Pages/Home"));
 const CharacteristicsPage = lazy(() => import("./Pages/CarateristicasPage"));

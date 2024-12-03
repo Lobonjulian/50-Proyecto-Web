@@ -1,9 +1,9 @@
 import IconoComponentes from "../Part/IconComponentes";
 
-const Card = ({ name, titulo, description, icon, imagen, profesion, className= "card" }) => {
+const Card = ({ name, titulo, description, icon, imagen, information, className= "card" }) => {
   return (
     <div className={className}>
-      <div className="card__title">
+      <div className="card card__title">
         {imagen ? (
           <img src={imagen} alt={name} />
         ) : (
@@ -13,7 +13,7 @@ const Card = ({ name, titulo, description, icon, imagen, profesion, className= "
         )}
         <div>
           <h4>{titulo || name}</h4>
-          {profesion && <p> {profesion} </p>}
+          {information && <p> {information} </p>}
         </div>
       </div>
       <p className="card__description">{description}</p>

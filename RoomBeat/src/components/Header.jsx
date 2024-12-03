@@ -1,7 +1,7 @@
 import Button from "./Ui/Button";
 import Logo from "./Part/Logo";
 
-import "../styles/layauts/header.css";
+import "../styles/layouts/header.css";
 
 const Link = [
   {
@@ -25,7 +25,7 @@ const Header = () => {
         <div className="header__NavLogo">
           <Logo />
           <nav className="header__nav">
-            <ul>
+            <ul className="header__NavLogo">
               {Link.map((link) => (
                 <li key={link.name}>
                   <a href={link.url}>{link.name}</a>

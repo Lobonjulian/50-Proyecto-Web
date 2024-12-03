@@ -3,7 +3,7 @@ import HeroImagen from "../assets/img/HeroRoomBeatLanding.webp";
 import Beneficio from "../components/section/Beneficio";
 import Form from "../components/section/Form";
 import Testimonio from "../components/section/Testimonio";
-import FQA from "../components/section/FQA";
+import Pqr from "../components/section/Pqr";
 import { BeneficioLanding, TestimonioLanding } from "../utils/data";
 
 const Landing = () => {
@@ -18,11 +18,11 @@ const Landing = () => {
         imagen={HeroImagen}
       />
       <Beneficio titulo={"Beneficios Principales"} texto={"Descubre por qué Roombeat es la elección perfecta para tu hogar inteligente "} BeneficioData={BeneficioLanding} />
-      <Form /> 
+      <Form isLandingPage={true} /> 
       <Testimonio TestimonioData={TestimonioLanding}/>
-      <FQA />
+      <Pqr />
     </main>
   );
-};
+}; 
 
 export default Landing;

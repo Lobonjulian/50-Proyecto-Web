@@ -9,7 +9,7 @@ const Button = ({className="btn" , titulo}) => {
   }
 
   return (
-    <button className={className} onClick={handleClick}> {titulo} </button>
+    <button className={className} onClick={handleClick}>{titulo}</button>
   )
 }
 

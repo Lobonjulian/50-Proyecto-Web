@@ -17,6 +17,19 @@
   box-sizing: border-box;
 }
 
+html {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--bg-200);
+  font-family: FuturaPT;
+}
+
+h1, h2, h3 {
+  font-family: Blazeberg;
+  text-wrap: balance;
+}
+
 ul {
   list-style: none;
 }
@@ -30,9 +43,18 @@ p {
   text-wrap: pretty;
 }
 
-html {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  background-color: var(--bg-200);
+@font-face {
+  font-family: FuturaPT;
+  src: url(assets/font/FuturaPT.otf) format("opentype");
+}
+@font-face {
+  font-family: Blazeberg;  
+  src: url(assets/font/Blazeberg.otf) format("opentype");
+}
+
+@media screen and (max-width: 980px) {
+  html {
+    padding: 0;
+  }
+  
 }

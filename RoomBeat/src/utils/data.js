@@ -2,23 +2,27 @@ import Altavoz from "../assets/icons/altavoz.svg";
 import AnaValencia from "../assets/img/Ana Valencia.webp";
 import BarraAnalitica from "../assets/icons/barraAnalisis.svg";
 import Bateria from "../assets/icons/bateria.svg";
+import Bocina from "../assets/img/Bocina.webp";
 import Bombillo from "../assets/img/bombillo.webp";
 import Burbuja from "../assets/img/burbuja.webp";
 import Camara from "../assets/img/camara.webp";
 import CarlosMendoza from "../assets/img/Carlos Mendoza.webp";
+import Carta from "../assets/icons/carta.svg";
 import CasaControl from "../assets/icons/casa.svg";
 import Control from "../assets/img/control.webp";
 import Disco from "../assets/icons/disco.svg";
 import Escudo from "../assets/icons/escudo.svg";
 import Flechas from "../assets/icons/flechas.svg";
+import House from "../assets/img/House.webp";
 import MariaRodriguez from "../assets/img/Maria Rodriguez.webp";
 import Microfono from "../assets/icons/microfono.svg";
 import Phone from "../assets/icons/phone.svg";
+import PhoneApp from "../assets/img/PhoneApp.webp";
 import Rayo from "../assets/icons/rayo.svg";
+import Reloj from "../assets/icons/reloj.svg";
+import Telefono from "../assets/icons/telefono.svg";
+
 import Wifi from "../assets/icons/wifi.svg";
-import Bocina from "../assets/img/Bocina.webp"
-import House from "../assets/img/House.webp"
-import PhoneApp from "../assets/img/PhoneApp.webp"
 
 export const CaracteristicaHome = [
   {
@@ -71,21 +75,21 @@ export const CaracteristicaPage = [
 export const TestimonioHome = [
   {
     name: "María García",
-    profesion: "Propietaria de casa",
+    information: "Propietaria de casa",
     description:
       "'Roombeat ha transformado completamente la forma en que interactúo con mi hogar. La automatización es increíble.'",
     imagen: MariaRodriguez,
   },
   {
     name: "Carlos Rodríguez",
-    profesion: "Arquitecto",
+    information: "Arquitecto",
     description:
       "'La integración de todos los dispositivos es perfecta. El ahorro energético ha sido notable desde que instalé Roombeat.'",
     imagen: CarlosMendoza,
   },
   {
     name: "Ana Martínez",
-    profesion: "Empresaria",
+    information: "Empresaria",
     description:
       "'La seguridad y tranquilidad que me brinda el sistema de monitoreo es invaluable. Totalmente recomendado.'",
     imagen: AnaValencia,
@@ -95,7 +99,7 @@ export const TestimonioHome = [
 export const TestimonioLanding = [
   {
     name: "María Rodriguez",
-    profession: "Propietaria de Casa",
+    information: "Propietaria de Casa",
     description:
       "Roombeat ha transformado completamente la forma en que interactúo con mi hogar. La automatización es perfecta y el ahorro de energía es notable.",
     imagen: MariaRodriguez,
@@ -103,14 +107,14 @@ export const TestimonioLanding = [
 
   {
     name: "Carlos Mendoza",
-    profession: "Arquitecto",
+    information: "Arquitecto",
     description:
       "La integración con otros dispositivos es impecable. Como profesional del diseño, aprecio la interfaz intuitiva y el control preciso.",
     imagen: CarlosMendoza,
   },
   {
     name: "Ana Valencia",
-    profession: "Empresaria",
+    information: "Empresaria",
     description:
       "La seguridad y tranquilidad que Roombeat proporciona no tiene precio. Puedo monitorear mi casa desde cualquier lugar.",
     imagen: AnaValencia,
@@ -198,7 +202,7 @@ export const Acciones = [
   },
 ];
 
-export const Pqr = [
+export const PqrData = [
   {
     pregunta: "¿Qué dispositivos son compatibles con Roombeat? ",
     respuesta:
@@ -213,5 +217,23 @@ export const Pqr = [
     pregunta: "¿Cuál es la política de privacidad de Roombeat? ",
     respuesta:
       "Tu privacidad es nuestra prioridad. Todos los datos están encriptados y nunca compartimos información personal con terceros. ",
+  },
+];
+
+export const InfoPersonal = [
+  {
+    titulo: "Teléfono de soporte",
+    information: "+57 300 123 4567",
+    icono: Telefono,
+  },
+  {
+    titulo: "Correo electrónico",
+    information: "contacto@roombeat.co",
+    icono: Carta,
+  },
+  {
+    titulo: "Horario de atención",
+    information: "Lunes a Viernes: 9:00 - 18:00",
+    icono: Reloj,
   },
 ];

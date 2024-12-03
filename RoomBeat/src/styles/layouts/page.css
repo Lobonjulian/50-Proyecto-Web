@@ -1,0 +1,68 @@
+.caracteristica,
+.testimonio,
+.beneficios {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: var(--bg-100);
+}
+
+.caracteristica--home {
+  margin-bottom: 6rem;
+}
+
+.cta__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta__section__img {
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta__section__img {
+  padding: 1rem;
+  max-width: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+
+.contacto__form {
+  display: flex;
+}
+.contacto__form__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contacto__form__info__personal {
+  height: 18rem;
+  background-color: var(--bg-100);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .cta__section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
