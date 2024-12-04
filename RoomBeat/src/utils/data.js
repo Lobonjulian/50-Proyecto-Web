@@ -187,35 +187,35 @@ export const BeneficioLanding = [
 export const Acciones = [
   {
     titulo: "Integración perfecta",
-    subTitulo: "En cualquier espacio",
+    description: "En cualquier espacio",
     imagen: House,
   },
   {
     titulo: "Diseño premium",
-    subTitulo: "Acabados de alta calidad",
+    description: "Acabados de alta calidad",
     imagen: Bocina,
   },
   {
     titulo: "Control intuitivo",
-    subTitulo: "Control intuitivo",
+    description: "Control intuitivo",
     imagen: PhoneApp,
   },
 ];
 
 export const PqrData = [
   {
-    pregunta: "¿Qué dispositivos son compatibles con Roombeat? ",
-    respuesta:
+    titulo: "¿Qué dispositivos son compatibles con Roombeat? ",
+    description:
       "Roombeat es compatible con la mayoría de los dispositivos inteligentes populares, incluyendo termostatos, luces, cerraduras y cámaras de seguridad de principales marcas. ",
   },
   {
-    pregunta: "¿Necesito conocimientos técnicos para instalar Roombeat? ",
-    respuesta:
+    titulo: "¿Necesito conocimientos técnicos para instalar Roombeat? ",
+    description:
       "No, Roombeat está diseñado para ser fácil de instalar y configurar. Además, ofrecemos soporte técnico gratuito durante la instalación.  ",
   },
   {
-    pregunta: "¿Cuál es la política de privacidad de Roombeat? ",
-    respuesta:
+    titulo: "¿Cuál es la política de privacidad de Roombeat? ",
+    description:
       "Tu privacidad es nuestra prioridad. Todos los datos están encriptados y nunca compartimos información personal con terceros. ",
   },
 ];
