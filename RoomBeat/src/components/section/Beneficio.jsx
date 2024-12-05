@@ -5,7 +5,7 @@ const Beneficio = ({ titulo, texto, BeneficioData }) => {
   return (
     <section className="beneficios">
       <Title titulo={titulo} texto={texto} />
-      <DataMap className="beneficios__map" Datos={BeneficioData} />
+      <DataMap className="beneficio__data" Datos={BeneficioData} />
     </section>
   );
 };

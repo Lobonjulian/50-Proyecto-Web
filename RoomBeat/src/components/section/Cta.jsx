@@ -1,9 +1,9 @@
 import Title from "../Part/Title";
 import Button from "../Ui/Button";
 
-const Cta = ({ btnTitulo, titulo, subTitulo }) => {
+const Cta = ({ btnTitulo, titulo, subTitulo, className="cta" }) => {
   return (
-    <section className="cta">
+    <section className={className}>
       <Title titulo={titulo} texto={subTitulo} />
       <Button titulo={btnTitulo} />
     </section>

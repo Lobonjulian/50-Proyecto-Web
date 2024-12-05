@@ -5,10 +5,10 @@ import "../../styles/section.css";
 const Hero = ({ titulo, subTitulo, btnTitulo, btn2Titulo, imagen, className="hero" }) => {
   return (
     <section className={className}>
-      <div className="hero__title">
+      <div className="hero hero__title">
         <Title titulo={titulo} texto={subTitulo} />
 
-        <div className="hero__title__btn">
+        <div className="hero hero__title hero__title__btn">
           <Button titulo={btnTitulo} />
           {btn2Titulo && (
             <Button titulo={btn2Titulo} className="btn btn--demo" />

@@ -1,5 +1,5 @@
 const IconoComponentes = ({ icon }) => {
-  return icon ? <img src={icon} alt={`${icon} icono`} /> : null;
+  return icon ? <img src={icon} alt={`${icon} icono`} loading="lazy" /> : null;
 };
 
 export default IconoComponentes;

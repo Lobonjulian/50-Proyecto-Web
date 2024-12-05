@@ -20,7 +20,7 @@ const Caracteristicas = () => {
           "Descubre la nueva era del sonido inteligente con Roombeat. Un altavoz revolucionario que combina calidad de audio excepcional con tecnología intuitiva para transformar cualquier espacio en una experiencia sonora inmersiva. "
         }
         btnTitulo={"Comprar ahorra"}
-        className="hero--caracteristica hero"
+        className="hero hero--caracteristica"
       />
 
       <Caracteristica
@@ -34,22 +34,23 @@ const Caracteristicas = () => {
         BeneficioData={BeneficioCaracteristica}
       />
 
-      <section>
+      <section className="acciones">
         <Title
           titulo={"Roombeat en acción"}
           texto={"Descubre cómo Roombeat transforma tu experiencia de audio"}
         />
 
-        <DataMap Datos={Acciones} className="acciones" />
+        <DataMap Datos={Acciones} className="acciones__data" />
       </section>
-
-      <Cta
-        titulo={"¿Listo para revolucionar tu experiencia de audio?"}
-        subTitulo={"Únete a la revolución del sonido inteligente."}
-        btnTitulo={"Comprar ahora"}
-      />
+      
+        <Cta
+          titulo={"¿Listo para revolucionar tu experiencia de audio?"}
+          subTitulo={"Únete a la revolución del sonido inteligente."}
+          btnTitulo={"Comprar ahora"}
+          className="cta cta--caracteristica"
+        />
     </main>
   );
 };
- 
+
 export default Caracteristicas;

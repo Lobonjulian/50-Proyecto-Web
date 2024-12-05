@@ -10,8 +10,7 @@ const Caracteristica = ({
   return (
     <section className={className}>
       <Title titulo={titulo} texto={description} />
-
-      <DataMap Datos={CaracteristicaData} className={"caracteristica__map"} />
+      <DataMap Datos={CaracteristicaData} className={"caracteristica__data"} classCard={"card card--caracteristica"}  />
     </section>
   );
 };

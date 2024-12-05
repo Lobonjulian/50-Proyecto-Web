@@ -33,7 +33,7 @@ const Home = () => {
           }
           btnTitulo={"Comenzar ahora"}
         />
-        <DataMap Datos={CtaImagen} className={"cta__section__img"} />
+        <DataMap Datos={CtaImagen} className={"cta__section cta__section__img"} />
       </section>
     </main>
   );

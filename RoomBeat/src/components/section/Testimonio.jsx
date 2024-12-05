@@ -10,7 +10,7 @@ const Testimonio = ({
     <section className="testimonio">
       <Title titulo={titulo} texto={subtitulo} />
       
-      <DataMap Datos={TestimonioData} className={"testimonio__map"} classCard={"card--testimonio"} />
+      <DataMap Datos={TestimonioData} className={"testimonio__data"} classCard={"card--testimonio"} />
     </section>
   );
 };

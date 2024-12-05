@@ -1,98 +1,129 @@
-.hero {
+.hero,
+.cta {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  gap: 5rem;
 }
 
-.hero__title {
-  max-width: 600px;
-  display: flex;
+.hero__title,
+.cta {
+  padding: 0 2rem;
   flex-direction: column;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0 0.625rem;
 }
 
 .hero__title__btn {
-  display: flex;
-  gap: 1rem;
-}
-
-.hero__imagen {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  img {
-    max-height: 20rem;
-  }
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 1rem 0;
 }
 
 .hero--caracteristica {
-  padding: 2rem 0;
-  justify-content: center;
+  padding: 1rem 0 2rem;
+  p {
+    width: 100%;
+    max-width: 550px;
+  }
   .hero__title__btn {
     justify-content: center;
   }
 }
 
 .caracteristica,
-.beneficios {
+.testimonio,
+.beneficios,
+.pqr {
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.beneficios {
-  flex-direction: row;
+  gap: 1rem;
+  background-color: var(--bg-100);
 }
 
-.caracteristica__map,
-.beneficios__map {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding: 2rem 0;
-  .card {
-    background-color: var(--bg-100);
-    padding: 1rem;
-    border-radius: 1rem;
+.beneficios {
+  flex-direction: row;
+  align-items: self-start;
+  justify-content: space-between;
+  background-color: var(--bg-200);
+}
+
+.pqr {
+  background-color: var(--bg-300);
+  gap: 2rem;
+  span {
+    display: none;
+  }
+  p {
+    color: var(--bg-100);
   }
 }
-.beneficios__map {
-  justify-content: center;
-  align-items: center;
+
+.caracteristica--home {
+  margin-bottom: 6rem;
 }
-.testimonio__map {
+
+.caracteristica__data,
+.testimonio__data,
+.beneficio__data,
+.acciones__data,
+.form__section {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
-  padding: 0 1rem;
+}
+
+.beneficio__data {
+  max-width: 900px;
+}
+
+.acciones__data {
+  .card__title {
+    flex-direction: column;
+    align-items: start;
+  }
+  img {
+    max-width: 250px;
+  }
+  .card__description {
+    opacity: 0.3;
+  }
 }
 
 .cta {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  max-width: 600px;
-  gap: 2rem;
-  h1 {
-    font-size: 2rem;
+  align-items: flex-start;
+  gap: 1rem;
+
+  p {
+    max-width: 600px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    flex-direction: column-reverse;
-    gap: 1rem;
-
-    .hero__title, .hero__title__btn {
-      justify-content: center;
-      margin-bottom: 1rem;
+.cta--caracteristica {
+  background-color: var(--text-100);
+  color: var(--bg-100);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  .title {
+    align-items: flex-start;
+    p {
+      color: var(--bg-100);
     }
   }
-  
-  .caracteristica__map, .beneficios__map, .testimonio__map {
-    flex-wrap: wrap ;
-    /* font-size: .5rem; */
+}
+
+.contact__form {
+  flex-direction: column;
+  align-items: flex-start;
+  .btn {
+    width: 100%;
   }
-  .cta {
-    padding: 1rem ;
-    align-items: center;
-  }
+}
+
+.form-group {
+  width: 100%;
 }

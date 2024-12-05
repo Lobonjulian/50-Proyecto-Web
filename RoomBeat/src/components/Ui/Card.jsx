@@ -13,7 +13,7 @@ const Card = ({ name, titulo, description, icon, imagen, information, className=
         )}
         <div>
           <h4>{titulo || name}</h4>
-          {information && <p> {information} </p>}
+          {information && <p className="card__title__information"> {information} </p>}
         </div>
       </div>
       <p className="card__description">{description}</p>

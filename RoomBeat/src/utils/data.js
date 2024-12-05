@@ -224,16 +224,16 @@ export const InfoPersonal = [
   {
     titulo: "Teléfono de soporte",
     information: "+57 300 123 4567",
-    icono: Telefono,
+    icon: Telefono,
   },
   {
     titulo: "Correo electrónico",
     information: "contacto@roombeat.co",
-    icono: Carta,
+    icon: Carta,
   },
   {
     titulo: "Horario de atención",
     information: "Lunes a Viernes: 9:00 - 18:00",
-    icono: Reloj,
+    icon: Reloj,
   },
 ];

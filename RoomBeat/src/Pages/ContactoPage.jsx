@@ -10,12 +10,13 @@ const Contacto = () => {
   return (
     <main className="contacto">
       <h1>Contactos </h1>
-
-      <section className="contacto__form">
+      <section className="contacto contacto__forms">
+       <section className="contacto contacto__form__info">
         <Form />
+       </section>
 
-      <section className="contacto__form__info">
-        <div className="contacto__form__info__personal">
+      <section className="contacto contacto__form__info">
+        <div className="contacto contacto__form__info__personal">
           <h3>Información Personal</h3>
           <section>
             <DataMap Datos={InfoPersonal} className="info" />
@@ -26,7 +27,7 @@ const Contacto = () => {
         <div className="contacto__form__info__personal">
           <h3>Nuestra Ubicación</h3>
           <Mapa />
-          <div className="contacto__form">
+          <div className="contacto contacto__form">
             <IconoComponentes icon={Ubicacion} />
             <p>Roombeat, 123 Calle Principal, Ciudad, País</p>
           </div>

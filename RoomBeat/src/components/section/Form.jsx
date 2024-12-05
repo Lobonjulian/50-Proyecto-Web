@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../styles/form.css";
+
 
 const Form = ({ isLandingPage = false }) => {
   const [formData, setFormData] = useState({
@@ -24,9 +24,9 @@ const Form = ({ isLandingPage = false }) => {
   };
 
   return (
-    <section className="form-section">
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div className="form-group">
+    <section className="form__section">
+      <form className="form__section contact__form" onSubmit={handleSubmit}>
+        <div className="form__group">
           <label htmlFor="nombre">Nombre completo</label>
           <input
             type="text"
@@ -39,7 +39,7 @@ const Form = ({ isLandingPage = false }) => {
           />
         </div>
 
-        <div className="form-group">
+        <div className="form__group">
           <label htmlFor="correo">Correo electrónico</label>
           <input
             type="email"
