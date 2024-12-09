@@ -1,6 +1,6 @@
 const Eventos = () => {
   return (
-    <section className="flex flex-col items-center py-10">
+    <section className="flex flex-col items-center py-5">
       <h2 className="text-2xl font-bold">Sobre el Evento</h2>
       <p>
         roomSyncConfig 2024 es el evento más importante para la comunidad de
