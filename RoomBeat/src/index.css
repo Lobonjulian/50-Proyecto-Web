@@ -50,6 +50,10 @@ p {
   text-wrap: pretty;
 }
 
+img {
+  object-fit: contain;
+}
+
 input,
 select,
 textarea {

@@ -127,3 +127,16 @@
 .form-group {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .hero,
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    img {
+      width: 80%;
+    }
+  }
+}
