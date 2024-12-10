@@ -1,4 +1,40 @@
 import Logo from "./section/Logo";
+import Facebook from "../assets/icons/Facebook.svg";
+import Instagram from "../assets/icons/Instagram.svg";
+import Twitter from "../assets/icons/Twitter.svg";
+
+const Link = [
+  {
+    name: "Inicio",
+    url: "/",
+  },
+  {
+    name: "Servicio",
+    url: "/servicio",
+  },
+  {
+    name: "Contacto",
+    url: "/contacto",
+  },
+];
+
+const Icon = [
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/",
+    imagen: Facebook,
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/",
+    imagen: Instagram,
+  },
+  {
+    name: "Twitter",
+    url: "https://www.twitter.com",
+    imagen: Twitter,
+  },
+];
 
 const Footer = () => {
   const date = new Date().getFullYear();
@@ -6,7 +42,7 @@ const Footer = () => {
   return (
     <>
       <footer className="py-4 flex flex-col items-center gap-4">
-        <section className="flex gap-4 justify-around">
+        <section className="flex gap-4 justify-between w-full">
           <div className="flex flex-col">
             <Logo />
             <p>
@@ -23,9 +59,13 @@ const Footer = () => {
           <div>
             <h3 className="font-bold">Enlaces</h3>
             <ul>
-              <li>Inicio</li>
-              <li>Servicio</li>
-              <li>Contacto</li>
+              {Link.map((link) => {
+                return (
+                  <li key={link.name}>
+                    <a href={link.url}>{link.name}</a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div>
@@ -44,16 +84,18 @@ const Footer = () => {
           </div>
           <div>
             <h3>Síguenos</h3>
-            <div className="flex gap-4">
-              <a href="https://www.facebook.com/" target="_blank">
-                facebook
-              </a>
-              <a href="https://www.instagram.com/" target="_blank">
-                instagram
-              </a>
-              <a href="https://www.twitter.com/" target="_blank">
-                twitter
-              </a>
+            <div className="flex gap-4 items-center">
+              {Icon.map((icon) => {
+                return (
+                  <a
+                    href={icon.url}
+                    key={icon.name}
+                    className="hover:bg-cyan-400 rounded-full"
+                  >
+                    <img src={icon.imagen} alt={icon.name} />
+                  </a>
+                );
+              })}
             </div>
           </div>
         </section>

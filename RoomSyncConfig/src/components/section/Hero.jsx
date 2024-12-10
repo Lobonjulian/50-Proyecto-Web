@@ -3,7 +3,7 @@ import HeroImg from "../../assets/img/HeroImage.webp";
 const Hero = () => {
   return (
     <>
-      <section className="flex justify-between items-center gap-4">
+      <section className="px-4 flex justify-between items-center gap-4">
         <div className="flex flex-col items-start gap-4 w-[680px]">
           <h1 className="text-3xl font-bold">
             Bienvenidos a RoomSyncConfig 2025
