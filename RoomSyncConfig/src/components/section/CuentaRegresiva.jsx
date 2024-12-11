@@ -25,8 +25,8 @@ const Fecha = () => {
 
 const CuentaRegresiva = () => {
   return (
-    <section className="flex flex-col items-center p-5">
-      <div>
+    <section className="flex flex-col items-center py-20 gap-8 bg-gradient-to-r from-violet-500 to-blue-500">
+      <div className="flex flex-col items-center">
         <h2 className="text-2xl font-bold">Cuenta Regresiva</h2>
         <p className="text-gray-400">
           15 - 16 de mayo de 2025 | Santiago de Cali{" "}

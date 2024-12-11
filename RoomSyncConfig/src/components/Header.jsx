@@ -1,50 +1,50 @@
-import Logo from "./section/Logo";
+import Logo from './section/Logo'
 
 const NavLink = [
   {
-    name: "Inicio",
-    url: "/",
+    name: 'Inicio',
+    url: '/'
   },
   {
-    name: "Oradores",
-    url: "/oradores",
+    name: 'Oradores',
+    url: '/oradores'
   },
   {
-    name: "Programación",
-    url: "/programacion",
+    name: 'Programación',
+    url: '/programacion'
   },
   {
-    name: "Ubicación",
-    url: "/ubicacion",
+    name: 'Ubicación',
+    url: '/ubicacion'
   },
   {
-    name: "Alimentos",
-    url: "/alimentos",
+    name: 'Alimentos',
+    url: '/alimentos'
   },
   {
-    name: "Codigo de Conducta",
-    url: "/conducta",
+    name: 'Codigo de Conducta',
+    url: '/conducta'
   },
   {
-    name: "Contacto",
-    url: "/contacto",
-  },
-];
+    name: 'Contacto',
+    url: '/contacto'
+  }
+]
 
 const Header = () => {
   return (
     <>
-      <header className="flex justify-between items-center py-2 px-4 bg-white">
+      <header className='flex justify-between items-center py-2 px-4 bg-white'>
         <div>
           <Logo />
         </div>
-        <nav className="flex">
-          <ul className="flex">
+        <nav className='flex'>
+          <ul className='flex'>
             {NavLink.map((navigation) => (
               <a
                 key={navigation.name}
                 href={navigation.url}
-                className="px-2 py-1 hover:bg-gray-100 rounded-2xl transition duration-300 ease-in-out"
+                className='px-2 py-1 hover:bg-gray-100 rounded-2xl transition duration-300 ease-in-out'
               >
                 {navigation.name}
               </a>
@@ -53,7 +53,7 @@ const Header = () => {
         </nav>
       </header>
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

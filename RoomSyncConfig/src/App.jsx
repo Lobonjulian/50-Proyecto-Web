@@ -4,6 +4,7 @@ import Hero from "./components/section/Hero.jsx";
 import Oradores from "./components/section/Oradores.jsx";
 import CuentaRegresiva from "./components/section/CuentaRegresiva.jsx";
 import Eventos from "./components/section/Eventos.jsx";
+import Location from "./components/section/Location.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Oradores />
       <CuentaRegresiva />
+      <Location />
       <Eventos />
       <Footer />
     </>
