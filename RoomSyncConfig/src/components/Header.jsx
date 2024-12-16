@@ -33,13 +33,12 @@ const NavLink = [
 
 const Header = () => {
   return (
-    <>
-      <header className='flex justify-between items-center py-2 px-4 bg-white'>
+      <header className='flex justify-between items-center py-2 px-4 bg-white max-md:flex-col' >
         <div>
           <Logo />
         </div>
         <nav className='flex'>
-          <ul className='flex'>
+          <ul className='flex max-md:text-sm max-md:flex-wrap'>
             {NavLink.map((navigation) => (
               <a
                 key={navigation.name}
@@ -52,7 +51,6 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-    </>
   )
 }
 
