@@ -1,21 +1,8 @@
 import Titles from "@/components/Part/Titles";
 import Card from "@/components/ui/Card";
-import { FaHeart, FaEnvira, FaCircleXmark } from "react-icons/fa6";
+import { PoliticasYPrivacidad } from "@/utils/datos";
+import { FaCircleXmark } from "react-icons/fa6";
 
-const CompromisoCard = [
-  {
-    name: "Respeto Mutuo",
-    description:
-      "Escuchar y respetar activamente todas las voces en el espacio, valorando la diversidad de opiniones y experiencias.",
-    icono: <FaHeart />,
-  },
-  {
-    name: "Cuidado del Espacio",
-    description:
-      "Mantener y cuidar el entorno, dejando el lugar igual o mejor de como lo encontramos.",
-    icono: <FaEnvira />,
-  },
-];
 
 const Politicas = () => {
   return (
@@ -37,17 +24,7 @@ const Politicas = () => {
           }
         />
         <div className="flex flex-wrap gap-4">
-          {CompromisoCard.map((compromiso) => {
-            return (
-            <div key={compromiso.name} className="flex bg-slate-200 rounded border-none p-6">
-              <Card
-                titulo={compromiso.name}
-                description={compromiso.description}
-                icono={compromiso.icono}
-              />
-            </div>
-            )}
-          )}
+          <Card datosMap={PoliticasYPrivacidad[0].compromiso} />        
         </div>
       </section>
 
@@ -55,9 +32,9 @@ const Politicas = () => {
         <h2>Comportamientos Inaceptables</h2>
         <ul>
           <li className="flex items-center gap-2"> <span className="text-red-600"><FaCircleXmark /></span> Acoso verbal o escrito de cualquier tipo</li>
-          <li className="flex items-center gap-2"><FaCircleXmark /> Discriminación basada en género, orientación sexual, raza, religión o discapacidad</li>
-          <li className="flex items-center gap-2"><FaCircleXmark /> Comportamiento intimidante o amenazante</li>
-          <li className="flex items-center gap-2"><FaCircleXmark /> Fotografía o grabación sin consentimiento</li>
+          <li className="flex items-center gap-2"> <span className="text-red-600"> <FaCircleXmark /></span> Discriminación basada en género, orientación sexual, raza, religión o discapacidad</li>
+          <li className="flex items-center gap-2"> <span className="text-red-600"> <FaCircleXmark /></span> Comportamiento intimidante o amenazante</li>
+          <li className="flex items-center gap-2"> <span className="text-red-600"> <FaCircleXmark /></span> Fotografía o grabación sin consentimiento</li>
         </ul>
       </section>
     </main>

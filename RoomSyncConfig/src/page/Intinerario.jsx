@@ -1,5 +1,7 @@
 const Intinerario = () => {
-  return <div>Intinerario</div>;
+  return (<main>
+  <h2>Intinerario</h2>
+  </main>)
 };
 
 export default Intinerario;

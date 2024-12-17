@@ -1,6 +1,12 @@
+import { oradores } from "@/utils/oradoresInfo";
 import Card from "../ui/Card";
 
 const Oradores = ({ titulo, subtitulo, datosMap }) => {
+  const combinedData = datosMap.map((orador, index) => ({
+    ...orador,
+    ...oradores[index], // Asumiendo que oradores tiene la misma longitud que datosMap
+  }));
+
   return (
     <section className="px-8 py-10 flex flex-col wrap items-center">
       {titulo && (
@@ -11,7 +17,7 @@ const Oradores = ({ titulo, subtitulo, datosMap }) => {
       )}
 
       <div>
-        <Card datosMap={datosMap} />
+        <Card datosMap={combinedData} />
       </div>
     </section>
   );

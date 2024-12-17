@@ -1,5 +1,6 @@
 export const HomeData = [
   {
+    id: 1,
     oradores: [
       {
         id: 1,
@@ -15,24 +16,26 @@ export const HomeData = [
         description: "Especialista en UX/UI y Diseño de Producto",
       },
     ],
-
+  },
+  {
+    id: 2,
     ubicacion: [
       {
         id: 1,
-        titulo: "Como Llegar",
+        name: "Como Llegar",
         medios: [
           {
-            titulo: "Metro",
+            name: "Metro",
             icono: "",
             description: "Línea 1 - Estación Centro de Convenciones",
           },
           {
-            titulo: "Autobus",
+            name: "Autobus",
             icono: "",
             description: "Rutas 101, 102 y 103",
           },
           {
-            titulo: "Taxi/Uber",
+            name: "Taxi/Uber",
             icono: "",
             description: "Servicio disponible 24/7",
           },
@@ -40,15 +43,15 @@ export const HomeData = [
       },
       {
         id: 2,
-        titulo: "Estacionamiento",
+        name: "Estacionamiento",
         medios: [
           {
-            titulo: "Estacionamiento",
+            name: "Estacionamiento",
             icono: "",
             description: "Estacionamiento gratuito",
           },
           {
-            titulo: "Accesibilidad",
+            name: "Accesibilidad",
             icono: "",
             description: "Espacios reservados disponibles",
           },
@@ -56,18 +59,18 @@ export const HomeData = [
       },
       {
         id: 3,
-        titulo: "Hoteles Recomendados",
+        name: "Hoteles Recomendados",
         medios: [
           {
-            titulo: "Hoteles Plaza",
+            name: "Hoteles Plaza",
             icono: "",
             description: {
               p1: "Desde $150 Noche",
-              p2: "a 5 minutos caminnando",
+              p2: "a 5 minutos caminando",
             },
           },
           {
-            titulo: "Grand Hotel",
+            name: "Grand Hotel",
             icono: "",
             description: {
               p1: "Desde $200 Noche",
@@ -196,7 +199,7 @@ export const UbicacionPage = [
         id: 2,
         name: "Horario",
         description: "Lunes a Domingo",
-        parrafo: "8:00 AM - 10:00 PM",
+        description1: "8:00 AM - 10:00 PM",
       },
       {
         id: 3,
@@ -209,7 +212,8 @@ export const UbicacionPage = [
         id: 1,
         name: "Metro",
         description:
-          "Línea MIO: Estación Universidades (5 min caminando)Línea MIO: Estación Terminal (8 min caminando)",
+          "Línea MIO: Estación Universidades (5 min caminando)",
+         descriptio1: "Línea MIO: Estación Terminal (8 min caminando)",
       },
       {
         id: 2,

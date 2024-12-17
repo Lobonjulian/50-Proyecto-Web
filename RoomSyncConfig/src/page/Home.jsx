@@ -3,7 +3,7 @@ import Eventos from "@/components/section/Eventos";
 import Hero from "@/components/section/Hero";
 import Oradores from "@/components/section/Oradores";
 import HeroImagen from "@/assets/img/HeroImage.webp";
-import { HomeData } from "@/utils/Datos";
+import { HomeData } from "@/utils/datos";
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
       <Oradores
         titulo={"Oradores Destacados"}
         subtitulo={"Conoce a nuestros expertos"}
-        datosMap={HomeData}
+        datosMap={HomeData[0].oradores}
       />
       <CuentaRegresiva />
       <Eventos />

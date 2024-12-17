@@ -38,11 +38,11 @@ const Footer = () => {
   const date = new Date().getFullYear();
 
   return (
-    <footer className="p-4  flex flex-col  items-center gap-4">
+    <footer className="p-4  flex flex-col text-white items-center gap-4 bg-gradient-to-b from-purple-500 from-30%  via-purple-500 from-60% to blue-900">
       <section className="flex gap-4 justify-between w-full flex-wrap gap-2">
         <div className="flex flex-col gap-2">
           <Logo />
-          <p className="text-pretty">
+          <p className="text-pretty max-w-[280px]">
             El mejor centro de convenciones en Valle del Cauca para tus eventos.
           </p>
         </div>
@@ -86,7 +86,7 @@ const Footer = () => {
                 <a
                   href={icon.url}
                   key={icon.name}
-                  className="text-xl text-violet-500 hover:text-teal-100 hover:bg-black rounded-full p-1"
+                  className="text-xl text-lime-500 hover:text-violet-500 hover:bg-white rounded-full p-1"
                 >
                   {icon.imagen}
                 </a>
@@ -96,7 +96,7 @@ const Footer = () => {
         </div>
       </section>
       <footer className="py-2">
-        <p>
+        <p className="font-bold">
           © 2024 - {date} Centro Valle del Pacífico. Todos los derechos
           reservados.
         </p>
