@@ -1,7 +1,7 @@
-import Titles from "@/components/Part/Titles";
-import Card from "@/components/ui/Card";
-import { PoliticasYPrivacidad } from "@/utils/datos";
 import { FaCircleXmark } from "react-icons/fa6";
+import { PoliticasYPrivacidad } from "@/utils/datos";
+import Card from "@/components/ui/Card";
+import Titles from "@/components/Part/Titles";
 
 
 const Politicas = () => {

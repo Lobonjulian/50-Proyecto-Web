@@ -5,9 +5,9 @@ const Titles = ({ titulo, description, etiqueta = "h2", classNameEtiqueta }) => 
   };
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 ">
       <EtiquetaTitulo>{titulo}</EtiquetaTitulo>
-      <p className="text-black">{description}</p>
+      <p className="text-black text-center">{description}</p>
     </div>
   );
 };

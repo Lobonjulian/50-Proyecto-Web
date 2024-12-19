@@ -1,12 +1,13 @@
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./page/Home.jsx";
-import OradoresPage from "./page/OradoresPage.jsx";
 import Alimentacion from "./page/Alimentacion.jsx";
+import ContactoPage from "./page/Contacto.jsx";
+import Footer from "./components/Footer.jsx";
+import Header from "./components/Header.jsx";
+import Home from "./page/Home.jsx";
+import Intinerario from "./page/Intinerario.jsx";
+import OradoresPage from "./page/OradoresPage.jsx";
 import Politicas from "./page/Politicas.jsx";
 import Ubicacion from "./page/Ubicacion.jsx";
-import Intinerario from "./page/Intinerario.jsx";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/contacto" element={<OradoresPage />} /> */}
+          <Route path="/contacto" element={<ContactoPage />} />
           <Route path="/oradores" element={<OradoresPage />} />
           <Route path="/ubicacion" element={<Ubicacion />} />
           <Route path="/programacion" element={<Intinerario />} />
