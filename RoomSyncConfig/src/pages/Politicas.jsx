@@ -1,8 +1,7 @@
 import { FaCircleXmark } from "react-icons/fa6";
-import { PoliticasYPrivacidad } from "@/utils/datos";
+import { PoliticasYPrivacidad } from "@/data/Datos";
 import Card from "@/components/ui/Card";
-import Titles from "@/components/Part/Titles";
-
+import Titles from "@/components/ui/Part/Titles";
 
 const Politicas = () => {
   return (
@@ -24,17 +23,45 @@ const Politicas = () => {
           }
         />
         <div className="flex flex-wrap gap-4">
-          <Card datosMap={PoliticasYPrivacidad[0].compromiso} />        
+          <Card datosMap={PoliticasYPrivacidad[0].compromiso} />
         </div>
       </section>
 
       <section className="bg-white w-full border-none rounded m-4  p-16 flex flex-col gap-8 ">
         <h2>Comportamientos Inaceptables</h2>
         <ul>
-          <li className="flex items-center gap-2"> <span className="text-red-600"><FaCircleXmark /></span> Acoso verbal o escrito de cualquier tipo</li>
-          <li className="flex items-center gap-2"> <span className="text-red-600"> <FaCircleXmark /></span> Discriminación basada en género, orientación sexual, raza, religión o discapacidad</li>
-          <li className="flex items-center gap-2"> <span className="text-red-600"> <FaCircleXmark /></span> Comportamiento intimidante o amenazante</li>
-          <li className="flex items-center gap-2"> <span className="text-red-600"> <FaCircleXmark /></span> Fotografía o grabación sin consentimiento</li>
+          <li className="flex items-center gap-2">
+            {" "}
+            <span className="text-red-600">
+              <FaCircleXmark />
+            </span>{" "}
+            Acoso verbal o escrito de cualquier tipo
+          </li>
+          <li className="flex items-center gap-2">
+            {" "}
+            <span className="text-red-600">
+              {" "}
+              <FaCircleXmark />
+            </span>{" "}
+            Discriminación basada en género, orientación sexual, raza, religión
+            o discapacidad
+          </li>
+          <li className="flex items-center gap-2">
+            {" "}
+            <span className="text-red-600">
+              {" "}
+              <FaCircleXmark />
+            </span>{" "}
+            Comportamiento intimidante o amenazante
+          </li>
+          <li className="flex items-center gap-2">
+            {" "}
+            <span className="text-red-600">
+              {" "}
+              <FaCircleXmark />
+            </span>{" "}
+            Fotografía o grabación sin consentimiento
+          </li>
         </ul>
       </section>
     </main>

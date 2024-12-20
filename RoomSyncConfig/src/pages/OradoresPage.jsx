@@ -1,5 +1,5 @@
 import { faker } from "@faker-js/faker";
-import { OradoresData } from "@/utils/datos";
+import { OradoresData } from "@/data/Datos";
 import Form from "@/components/ui/Form";
 import Hero from "@/components/section/Hero";
 import Oradores from "@/components/section/Oradores";
@@ -15,7 +15,7 @@ const OradoresPage = () => {
         className="flex text-white flex-wrap flex-col gap-4 bg-gradient-to-b from-purple-500 from-40%  via-purple-800 to blue-900"
       />
 
-      <section className="flex justify-center mt-4">
+      <section className="px-4 flex justify-center mt-4 max-md:flex-col">
         <img
           src={`https://i.pravatar.cc/500?u=${Math.random()
             .toString(36)
@@ -35,7 +35,7 @@ const OradoresPage = () => {
           <p className="text-pretty max-w-[300px]">
             {OradoresData[0].OradorPrincipal.description}
           </p>
-          {OradoresData[0].OradorPrincipal.presentacion.map(
+          {OradoresData[0].OradorPrincipal.presentation.map(
             (presentacion, index) => (
               <div key={index}>
                 <p className="font-bold">{presentacion.horario.hora}</p>
@@ -48,7 +48,7 @@ const OradoresPage = () => {
 
       <Oradores datosMap={OradoresData[0].oradores} />
 
-      <section className="flex flex-col items-center">
+      <section className="flex flex-col items-center gap-4">
         <Form
           titulo={"Sugiere un Orador"}
           description={

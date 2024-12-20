@@ -1,4 +1,4 @@
-import { HomeData } from "../../utils/datos";
+import { HomeData } from "@/data/Datos";
 
 const Eventos = () => {
   return (
@@ -6,10 +6,10 @@ const Eventos = () => {
       <article className="flex flex-col py-10 gap-6">
         <div className="flex flex-col items-center gap-4">
           <h2 className="text-2xl font-bold">Ubicación</h2>
-          <p>Centro de Convenciones Valles del Pacifico, Palmira, Colombia</p>
+          <p>Centro de Convenciones Valles del Pacifico, Yumbo, Colombia</p>
         </div>
 
-        <div className="flex flex-col items-center gap-4">
+        <div className="px-4 flex flex-col items-center gap-4">
           <h2 className="text-2xl font-bold">Ubicación</h2>
           <article className="flex gap-4 flex-wrap">
             {HomeData[1].ubicacion.map((ubicacion) => (

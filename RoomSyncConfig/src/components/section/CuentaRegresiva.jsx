@@ -6,8 +6,7 @@ const CuentaRegresiva = () => {
       <div className="flex flex-col items-center">
         <h2 className="text-3xl font-bold text-yellow-500">Cuenta Regresiva</h2>
         <p className="text-rose-50">
-          {" "}
-          15 - 16 de mayo de 2025 | Santiago de Cali, Colombia
+          15 - 16 de mayo de 2025 | Yumbo, Colombia
         </p>
       </div>
       <article>

@@ -1,5 +1,5 @@
 import Form from "@/components/ui/Form";
-import Titles from "@/components/Part/Titles";
+import Titles from "@/components/ui/Part/Titles";
 
 const ContactoPage = () => {
   return (

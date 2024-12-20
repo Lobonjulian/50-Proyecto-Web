@@ -2,7 +2,6 @@ import Bebidas from "@assets/img/Bebidas.webp";
 import ComidaSinGluten from "@assets/img/ComidaSinGluten.webp";
 import comidaVegetariana from "@assets/img/comidaVegetariana.webp";
 
-
 export const HomeData = [
   {
     id: 1,
@@ -96,7 +95,7 @@ export const OradoresData = [
       cargo: "Directora de Innovación Tecnológica en TechForward",
       description:
         "Con más de 15 años de experiencia en el sector tecnológico,lidera iniciativas de transformación digital y desarrollo de soluciones innovadoras. Su charla se centrará en las últimas tendencias en automatización de procesos y el futuro de la tecnología empresarial.",
-      presentacion: [
+      presentation: [
         {
           horario: {
             icono: "",
@@ -113,7 +112,7 @@ export const OradoresData = [
       {
         id: 1,
         description:
-          "Especialista en desarrollo de sistemas distribuidos y microservicios. Compartirá sus experiencias en la implementación de arquitecturas escalables.",
+          "Especialista en desarrollo de sistemas distribuidos y microservices. Compartirá sus experiencias en la implementación de arquitecturas escalables.",
       },
       {
         id: 2,
@@ -132,7 +131,7 @@ export const OradoresData = [
 export const ProgramacionData = {
   programacion: [
     {
-      jueves: [
+      Jueves: [
         {
           id: 1,
           name: "9:00 AM - 10:00 AM",
@@ -208,7 +207,7 @@ export const ProgramacionData = {
           ],
         },
       ],
-      viernes: [
+      Viernes: [
         {
           id: 1,
           name: "9:00 AM - 10:00 AM",
@@ -265,8 +264,20 @@ export const ProgramacionData = {
             },
           ],
         },
+        {
+          id: 5,
+          name: "5:30 PM - 6:30 PM",
+          banner: "Networking",
+          card: [
+            {
+              name: "Cocktail de Networking",
+              description:
+                "Sesión de networking con bebidas y aperitivos. Oportunidad para conectar con otros profesionales del sector.",
+            },
+          ],
+        },
       ],
-      sábado: [
+      Sabado: [
         {
           id: 1,
           name: "10:00 AM - 11:00 AM",
@@ -309,8 +320,48 @@ export const ProgramacionData = {
             },
           ],
         },
+        {
+          id: 4,
+          name: "4:00 PM - 5:00 PM",
+          banner: "Conferencia",
+          card: [
+            {
+              icono: "",
+              name: "Marketing Digital",
+              cargo: "Experto en Marketing Digital, MarketingCorp",
+              description:
+                "Descubre cómo el marketing digital puede ayudar a tu negocio.",
+            },
+          ],
+        },
+        {
+          id: 5,
+          name: "5:30 PM - 6:30 PM",
+          banner: "Taller",
+          card: [
+            {
+              icono: "",
+              name: "Desarrollo de Aplicaciones Móviles",
+              cargo: "Desarrollador Senior, MobileDev",
+              description:
+                "Aprende a desarrollar aplicaciones móviles para Android y iOS.",
+            },
+          ],
+        },
+        {
+          id: 6,
+          name: "7:00 PM - 8:00 PM",
+          banner: "Networking",
+          card: [
+            {
+              name: "Cena de Networking",
+              description:
+                "Sesión de networking con cena. Oportunidad para conectar con otros profesionales del sector.",
+            },
+          ],
+        },
       ],
-      domingo: [
+      Domingo: [
         {
           id: 1,
           name: "10:00 AM - 11:00 AM",
@@ -339,18 +390,72 @@ export const ProgramacionData = {
             },
           ],
         },
+        {
+          id: 3,
+          name: "2:00 PM - 3:00 PM",
+          banner: "Conferencia",
+          card: [
+            {
+              icono: "",
+              name: "Inteligencia Artificial y Machine Learning",
+              cargo: "Experto en Inteligencia Artificial, AIcorp",
+              description:
+                "Descubre cómo la inteligencia artificial y el machine learning pueden revolucionar tu negocio.",
+            },
+          ],
+        },
+        {
+          id: 4,
+          name: "3:00 PM - 4:00 PM",
+          banner: "Taller",
+          card: [
+            {
+              icono: "",
+              name: "Desarrollo de Aplicaciones de Inteligencia Artificial",
+              cargo: "Desarrollador Senior, AIdev",
+              description:
+                "Aprende a desarrollar aplicaciones de inteligencia artificial para diferentes plataformas.",
+            },
+          ],
+        },
+        {
+          id: 5,
+          name: "4:00 PM - 5:00 PM",
+          banner: "Conferencia",
+          card: [
+            {
+              icono: "",
+              name: "Ciberseguridad y Protección de Datos",
+              cargo: "Experto en Ciberseguridad, CyberCorp",
+              description:
+                "Descubre cómo proteger tus datos y sistemas de ciberataques.",
+            },
+          ],
+        },
+        {
+          id: 6,
+          name: "5:00 PM - 6:00 PM",
+          banner: "Networking",
+          card: [
+            {
+              name: "Cocktail de Networking",
+              description:
+                "Sesión de networking con bebidas y aperitivos. Oportunidad para conectar con otros profesionales del sector.",
+            },
+          ],
+        },
       ],
     },
   ],
 };
 
-export const UbicacionData = [
+export const LocationData = [
   {
     ubicacion: [
       {
         id: 1,
         name: "Dirección",
-        description: "Palmira, Valle del Cauca, Colombia",
+        description: "Yumbo, Valle del Cauca, Colombia",
       },
       {
         id: 2,
@@ -369,7 +474,7 @@ export const UbicacionData = [
         id: 1,
         name: "Metro",
         description: "Línea MIO: Estación Universidades (5 min caminando)",
-        descriptio1: "Línea MIO: Estación Terminal (8 min caminando)",
+        description1: "Línea MIO: Estación Terminal (8 min caminando)",
       },
       {
         id: 2,
@@ -408,7 +513,7 @@ export const UbicacionData = [
     hoteles: [
       {
         id: 1,
-        name: "Hotel Palmira Real",
+        name: "Hotel Yumbo Real",
         description: "A 5 minutos caminando",
         valor: "$250.000 COP/noche",
       },
@@ -428,7 +533,7 @@ export const UbicacionData = [
   },
 ];
 
-export const AlimentacionData = [
+export const feeding = [
   {
     id: 1,
     comida: [
@@ -444,14 +549,14 @@ export const AlimentacionData = [
         name: "Opciones Vegetarianas",
         description:
           "Deliciosos platos preparados con ingredientes frescos y saludables.",
-       icono: comidaVegetariana,
+        icono: comidaVegetariana,
       },
       {
         id: 3,
         name: "Sin Gluten",
         description:
           "Alternativas especialmente preparadas para dietas sin gluten.",
-       icono: ComidaSinGluten,
+        icono: ComidaSinGluten,
       },
     ],
     horario: [

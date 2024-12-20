@@ -1,9 +1,9 @@
-import { HomeData } from "@/utils/datos";
+import { HomeData } from "@/data/Datos";
 import CuentaRegresiva from "@/components/section/CuentaRegresiva";
 import Eventos from "@/components/section/Eventos";
-import Hero from "@/components/section/Hero";
 import HeroImagen from "@/assets/img/HeroImage.webp";
 import Oradores from "@/components/section/Oradores";
+import Hero from "@/components/section/Hero";
 
 const Home = () => {
   return (

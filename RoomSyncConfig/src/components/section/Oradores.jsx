@@ -1,4 +1,4 @@
-import { oradores } from "@/utils/oradoresInfo";
+import { oradores } from "@/data/oradoresInfo";
 import Card from "../ui/Card";
 
 const Oradores = ({ titulo, subtitulo, datosMap }) => {

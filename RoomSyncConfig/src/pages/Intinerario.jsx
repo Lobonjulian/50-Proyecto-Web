@@ -1,8 +1,8 @@
-import Titles from "@/components/Part/Titles";
+import Titles from "@/components/ui/Part/Titles";
 
-const NavDias = ["Jueves", "Viernes", "Sabado", "Domingo"];
+const NavDias = ["Jueves", "Viernes", "Sábado", "Domingo"];
 
-const Intinerario = () => {
+const Itinerary = () => {
   return (
     <main className="bg-slate-200">
       <Titles
@@ -12,15 +12,17 @@ const Intinerario = () => {
       />
       <nav className="flex justify-center flex-wrap ">
         <div className="border">
-          {NavDias.map((dias, index) => (
+          {NavDias.map((days, index) => (
             <button key={index} className="p-2 font-semibold">
-              {dias}
+              {days}
             </button>
           ))}
         </div>
       </nav>
       <main className="grid grid-cols-2">
-        <aside className=" p-32"></aside>
+       <aside>
+       crear nueva card
+        </aside>
         <article className="flex flex-col gap-6 p-3 ">
           <div className="bg-slate-50 border rounded-lg p-4">
             <h3 className="font-bold">Consejos para el Evento</h3>
@@ -56,4 +58,4 @@ const Intinerario = () => {
   );
 };
 
-export default Intinerario;
+export default Itinerary;

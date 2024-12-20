@@ -1,5 +1,5 @@
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
-import Logo from "./section/Logo";
+import Logo from "../section/Logo";
 
 const Link = [
   {
@@ -50,7 +50,7 @@ const Footer = () => {
           <h3 className="font-bold">Contacto</h3>
           <p>info@centrovalle.co</p>
           <p>+57 2 123 4567</p>
-          <p>Palmira, Valle del Cauca, Colombia</p>
+          <p>Yumbo, Valle del Cauca, Colombia</p>
         </div>
         <div>
           <h3 className="font-bold">Enlaces</h3>

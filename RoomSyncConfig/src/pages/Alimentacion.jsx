@@ -1,11 +1,11 @@
-import { AlimentacionData } from "@/utils/datos";
+import { feeding } from "@/data/Datos";
 import Card from "@/components/ui/Card";
 import Form from "@/components/ui/Form";
-import GoogleMap from "@/components/Part/GoogleMap";
+import GoogleMap from "@/components/ui/Part/GoogleMap";
 import Hero from "@/components/section/Hero";
-import Titles from "@/components/Part/Titles";
+import Titles from "@/components/ui/Part/Titles";
 
-const Alimentacion = () => {
+const Feeding = () => {
   return (
     <main>
       <Hero
@@ -19,7 +19,7 @@ const Alimentacion = () => {
       />
 
       <section>
-        <Card datosMap={AlimentacionData[0].comida} />
+        <Card datosMap={feeding[0].comida} />
       </section>
 
       <section className="p-8 flex flex-col items-center justify-center">
@@ -29,7 +29,7 @@ const Alimentacion = () => {
             "Nuestros servicios están disponibles en los siguientes horarios:"
           }
         />
-        <Card datosMap={AlimentacionData[0].horario} />
+        <Card datosMap={feeding[0].horario} />
       </section>
       <section className="p-8 flex flex-col items-center justify-center bg-gray-50">
         <Titles
@@ -47,4 +47,4 @@ const Alimentacion = () => {
   );
 };
 
-export default Alimentacion;
+export default Feeding;
