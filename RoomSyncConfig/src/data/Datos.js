@@ -653,7 +653,18 @@ export const PoliticasYPrivacidad = [
         description:
           "Proceso de mediación disponible para resolver conflictos menores entre participantes.",
         icono: "",
+      },{
+        id: 5,
+        name: "Acciones Legales",
+        description: "En casos que lo ameriten, se tomarán acciones legales y se cooperará con las autoridades correspondientes.",
+        icono: ""
       },
+      {
+       id: 6,
+       name: "Comunicación",
+       description: "Información transparente sobre las medidas tomadas, respetando la privacidad de los involucrados.",
+      icono: ""
+      }
     ],
     procedimiento: [
       {
